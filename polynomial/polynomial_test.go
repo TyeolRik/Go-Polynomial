@@ -21,9 +21,9 @@ func TestFunc(t *testing.T) {
 }
 
 func TestLegendrePolynomials(t *testing.T) {
-	pos := LegendrePolynomials(5, false)
-	for _, po := range pos {
-		fmt.Printf("%.6f\n", po.c)
+	pos := LegendrePolynomials(5, true)
+	for i, po := range pos {
+		fmt.Println(i, po)
 	}
 }
 
